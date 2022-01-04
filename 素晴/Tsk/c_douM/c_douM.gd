@@ -9,11 +9,3 @@ func init():
 	aiTab = "we_hero_buff_n:1_p:1"
 
 
-func _gConnect():
-    
-
-func m(atk:atkInfo):
-    getHero().att.arm += atk.atkVal
-
-func _use(card,cell):
-

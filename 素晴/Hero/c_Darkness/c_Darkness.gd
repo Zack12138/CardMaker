@@ -8,14 +8,21 @@ func init():
 	type = TYPE.HERO
 	camp = "m_meihaoshijie"
 	name = "达克妮斯"
-	tab = "英雄 人类 抖M"
+	tab = "英雄,人类,抖M"
 	tskId = "c_douM"
 	dec = "被攻击后获得等额的护盾"
 	isInit = true
 	needUlock = false
 
+
 func _use(card,cell):
-	getHero().plusHp(15)
+	pass
+
 
 func _connect():
-    getHero().connect("onHurtEnd",self,"m")
+    connect("onHurtEnd",self,"m")
+
+
+func m(atk:AtkInfo):
+	att.arm += atk.atkVal
+	
