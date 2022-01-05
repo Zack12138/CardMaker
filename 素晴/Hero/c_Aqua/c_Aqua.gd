@@ -16,7 +16,7 @@ func init():
 
 
 func _use(card,cell):
- 	pass
+	pass
 
 
 	

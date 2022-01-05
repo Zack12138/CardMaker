@@ -5,7 +5,7 @@ func init():
 	lv = 9
 	hp = 30
 	cardIds = [
-		"c_Darkness",
+		"c_Aqua",
 #		"c_1c21_1","c_1c21_1","c_1c21_1",
 #		"c_1c31_1","c_1c31_1","c_1c31_1",
 #		"c_1c43_1","c_1c43_1","c_1c43_1",

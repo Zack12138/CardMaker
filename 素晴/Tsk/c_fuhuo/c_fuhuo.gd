@@ -15,9 +15,13 @@ func _use(card,cell):
         if i.type == Card.TYPE.CREATURE:
             cs.append(i)
     if cs.size() > 0 :
-        var cell = getHero().getNullCell()
-        if cell != null:
+        var cell1 = getHero().getNullCell()
+        if cell1 != null:
             var inx = sys.rndRan(0,cs.size()-1)
             var c = cs[inx]
             getHero().gry.eraseCard(c)
-            getHero().cardInBattle(c,cell,true)
+            getHero().cardInBattle(c,cell1,true)
+
+
+func useIf():
+    return true
